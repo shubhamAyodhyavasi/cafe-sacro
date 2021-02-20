@@ -1,0 +1,40 @@
+
+.navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.navigation-menu{
+
+    @media screen and (max-width: 799px){
+        display: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+    &__item{
+        display: inline;
+        padding:6px
+    }
+    &__link{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    &-user{
+        @media screen and (max-width: 799px){
+            display: none;
+        }
+    }
+}
+.mobile-nav{
+
+    @media screen and (min-width: 800px){
+        display: none;
+    }
+}
+.logo-link{
+    &:hover{
+        text-decoration: none;
+    }
+}
